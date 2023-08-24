@@ -12,11 +12,16 @@ if (isset($_POST['simpan'])) {
     $getStatus_ajuan = 'Belum di verifikasi';
     // Query tambah data
     $sql = "INSERT INTO tbl_beasiswa (Nama, Email, No_hp, Semester, Ipk, Jns_beasiswa, Dir_file, Status_ajuan) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
+    // Tempat dimana file disimpan
+    $target_dir = "upload/";
 
+    // mengecek apakah folder upload sudah ada atau belum
+    if(!file_exists($target_dir)){
+        mkdir($target_dir, 0777, true);
+    }
+    
     // mengecek apakah ada file atau tidak
     if (($_FILES['inputSyaratFile']['name'] != "")) {
-        // Tempat dimana file disimpan
-        $target_dir = "upload/";
         $file = $_FILES['inputSyaratFile']['name'];
         $path = pathinfo($file);
         $filename = $path['filename'];
