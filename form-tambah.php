@@ -26,11 +26,11 @@
           </li>
           <!-- navbar menu daftar -->
           <li class="nav-item px-lg-5 fw-bold fs-5">
-            <a class="nav-link" href="form-tambah.php">Daftar</a>
+            <a class="nav-link active" href="form-tambah.php">Daftar</a>
           </li>
           <!-- navbar menu hasil -->
           <li class="nav-item px-lg-5 fw-bold fs-5">
-            <a class="nav-link active" href="hasil.php">Hasil</a>
+            <a class="nav-link" href="hasil.php">Hasil</a>
           </li>
         </ul>
       </div>
