@@ -22,7 +22,7 @@ include_once 'config.php'
         <ul class="navbar-nav">
           <!-- navbar menu beasiswa -->
           <li class="nav-item px-lg-5 fw-bold fs-5">
-            <a class="nav-link" href="index.php">Pilihan Beasiswa</a>
+            <a class="nav-link active" href="index.php">Pilihan Beasiswa</a>
           </li>
           <!-- navbar menu daftar -->
           <li class="nav-item px-lg-5 fw-bold fs-5">
@@ -30,7 +30,7 @@ include_once 'config.php'
           </li>
           <!-- navbar menu hasil -->
           <li class="nav-item px-lg-5 fw-bold fs-5">
-            <a class="nav-link active" href="hasil.php">Hasil</a>
+            <a class="nav-link" href="hasil.php">Hasil</a>
           </li>
         </ul>
       </div>
